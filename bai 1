@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int tong=0;
+    for(int i=1; i<=10; i++)
+    {
+        int a;
+        printf("Nhap so nguyen %d: ",i);
+        scanf("%d",&a);
+        tong+=a;
+    }
+    printf("Tong la: %d",tong);
+    return 0;
+}
