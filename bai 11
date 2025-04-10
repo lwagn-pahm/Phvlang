@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    unsigned int a;
+    scanf("%d",&a);
+    for(int i=32; i>=0; i--){
+        printf("%u",(a>>i)&1);
+    }
+    printf("\n");
+    printf("0%o\n",a);
+    printf("0x%X",a);
+    return 0;
+}
