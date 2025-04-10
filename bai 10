@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int f(int a){
+int b=1;
+int c=2;
+int d;
+for(int i=3;i<=a;i++){
+    d=b+c;
+    b=c;
+    c=d;
+}
+    return d;
+}
+
+int main()
+{
+    int a;
+    scanf("%d",&a);
+printf("%d",f(a));
+}
