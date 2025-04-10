@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+typedef long long ll;
+ ll ucln(ll a,ll b){
+    if(a==0 || b==0)
+        return a+b;
+    else
+        while(b!=0){
+        ll r=a%b;
+        a=b;
+        b=r;
+        }
+        return a;
+}
+ll bcnn(ll a, ll b){
+    return a/ucln(a,b)*b;
+}
+int main(){
+    int a,b;
+    scanf("%d%d",&a,&b);
+    printf("ucln la:%d\n",ucln(a,b));
+    printf("bcnn la: %d",bcnn(a,b));
+    return 0;
+}
+
